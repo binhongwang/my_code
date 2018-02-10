@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="50dp"
+    android:layout_height="100dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="50dp"
+        android:layout_height="75dp">
+
+        <ImageView
+            android:id="@+id/iv_sign_tip"
+            android:layout_width="match_parent"
+            android:layout_height="75dp" />
+
+        <TextView
+            android:id="@+id/txt_rewards"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:text="500"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <com.sackcentury.shinebuttonlib.ShineButton
+            android:id="@+id/btn_shine"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            app:allow_random_color="false"
+            app:big_shine_color="@color/star_primary_color"
+            app:small_shine_color="@color/star_primary_color_dark" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txt_days"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@android:color/darker_gray" />
+
+</LinearLayout>
